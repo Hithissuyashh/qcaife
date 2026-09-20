@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
 import { FaultyTerminal } from "@/components/faulty-terminal";
-import avatar from "@/assets/suyash.jpg.asset.json";
+import avatar from "@/assets/suyash.jpg";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -62,7 +62,7 @@ function ContactPage() {
         <div className="mt-12 flex flex-col gap-10 sm:flex-row sm:items-start sm:gap-12">
           <figure className="shrink-0">
             <img
-              src={avatar.url}
+              src={avatar}
               alt="Suyash Vishwakarma"
               width={200}
               height={200}
